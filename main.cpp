@@ -3,15 +3,15 @@
 #include "Player.h"
 #include "User.h"
 #include "Computer.h"
+#include "Game.h"
 
 int main() {
 
-    auto *user = new User();
-    auto *computer = new Computer();
+    Computer *computer = new Computer();
+    User     *user     = new User();
 
-    int result = user->makeFist()->canWin(computer->makeFist());
-
-    std::cout << result;
+    Game *game = new Game((Player *)user, (Player *)computer);
+    game->init();
 
     return 0;
 }
