@@ -11,7 +11,7 @@
 class User : Player{
 public:
     User();
-    Fist *makeFist();
+    Fist *makeFist() override ;
 };
 
 

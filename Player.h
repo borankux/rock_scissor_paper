@@ -6,7 +6,9 @@
 #include "Fist.h"
 
 class Player {
-    Fist *makeFist();
+public:
+    virtual ~Player() {};
+    virtual Fist *makeFist() {};
 };
 
 

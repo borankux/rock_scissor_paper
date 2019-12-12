@@ -13,5 +13,10 @@ int main() {
     Game *game = new Game((Player *)user, (Player *)computer);
     game->init();
 
+    while (true) {
+        game->hint();
+        game->play();
+    }
+
     return 0;
 }

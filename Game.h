@@ -10,7 +10,7 @@
 
 class Game {
 private:
-    Player * player1, * player2;
+    Player *player1, *player2;
 
 public:
     Game(Player *player1, Player *player2);

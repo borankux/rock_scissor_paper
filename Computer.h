@@ -7,11 +7,12 @@
 
 
 #include "Fist.h"
+#include "Player.h"
 
-class Computer {
+class Computer :Player {
 public:
     Computer();
-    Fist *makeFist();
+    Fist *makeFist() override;
 };
 
 
